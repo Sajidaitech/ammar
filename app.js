@@ -10,8 +10,8 @@ const retailProducts = [
 ];
 
 const wholesalePacks = [
-  { id: "w1", name: "50 Kurtis Pack", quantity: 50, price: 900, img: "https://via.placeholder.com/200x250?text=50+Kurtis" },
-  { id: "w2", name: "30 Sarees Pack", quantity: 30, price: 1200, img: "https://via.placeholder.com/200x250?text=30+Sarees" },
+  { id: "w1", name: "50 Kurtis Pack", quantity: 50, price: 900, img: "images/Kurti.jpg" },
+  { id: "w2", name: "30 Sarees Pack", quantity: 30, price: 1200, img: "images/Saree.jpg" },
 ];
 
 // ---------- State ----------
