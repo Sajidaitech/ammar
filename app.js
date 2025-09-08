@@ -2,11 +2,11 @@
 
 // ---------- Data ----------
 const retailProducts = [
-  { id: 1, name: "Kurti", price: 45, category: "Topwear", img: "https://via.placeholder.com/200x250?text=Kurti" },
-  { id: 2, name: "Saree", price: 80, category: "Traditional", img: "https://via.placeholder.com/200x250?text=Saree" },
-  { id: 3, name: "Dress", price: 70, category: "Western", img: "https://via.placeholder.com/200x250?text=Dress" },
-  { id: 4, name: "Tops", price: 30, category: "Topwear", img: "https://via.placeholder.com/200x250?text=Tops" },
-  { id: 5, name: "Jeans", price: 55, category: "Bottomwear", img: "https://via.placeholder.com/200x250?text=Jeans" },
+  { id: 1, name: "Kurti", price: 45, category: "Topwear", img: "images/Kurti.jpg" },
+  { id: 2, name: "Saree", price: 80, category: "Traditional", img: "images/Saree.jpg" },
+  { id: 3, name: "Dress", price: 70, category: "Western", img: "images/Dress.jpg" },
+  { id: 4, name: "Tops", price: 30, category: "Topwear", img: "images/Tops.jpg" },
+  { id: 5, name: "Jeans", price: 55, category: "Bottomwear", img: "images/Jeans.jpg" },
 ];
 
 const wholesalePacks = [
