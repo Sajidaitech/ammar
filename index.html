@@ -42,18 +42,18 @@
       <section id="customerSection" class="view hidden">
         <h2>Customer Panel</h2>
         <div class="panels two-col">
+          <!-- My Cart -->
           <div class="panel">
-            <h3>My Cart (Placeholder)</h3>
+            <h3>My Cart</h3>
             <p>Items in cart: <span id="cartCount">0</span></p>
             <ul id="cartList" class="list"></ul>
+            <button id="checkoutBtn" class="btn">Proceed to Payment</button>
           </div>
+
+          <!-- Order History -->
           <div class="panel">
-            <h3>Order History (Placeholder)</h3>
-            <ul class="list">
-              <li>#EW-10214 — 2x Kurti, 1x Tops — <em>Delivered</em></li>
-              <li>#EW-10202 — 1x Dress — <em>Processing</em></li>
-              <li>#EW-10188 — 1x Saree — <em>Cancelled</em></li>
-            </ul>
+            <h3>Order History</h3>
+            <ul id="orderHistory" class="list"></ul>
           </div>
         </div>
       </section>
@@ -90,6 +90,32 @@
     <footer class="footer">
       <p>&copy; <span id="year"></span> Elegant Wear. All rights reserved.</p>
     </footer>
+  </div>
+
+  <!-- Payment Popup (Hidden by default) -->
+  <div id="paymentModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>Payment Details</h2>
+      <form id="paymentForm">
+        <label for="username">Full Name:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="card">Card Number:</label>
+        <input type="text" id="card" name="card" required />
+
+        <label for="bank">Bank Name:</label>
+        <input type="text" id="bank" name="bank" required />
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <button type="submit" class="btn">Confirm Payment</button>
+      </form>
+    </div>
   </div>
 
   <script src="app.js"></script>
