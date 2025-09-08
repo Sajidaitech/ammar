@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elegant Wear — Online Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- App Shell -->
+  <div id="appShell" class="app">
+    <!-- Top Nav -->
+    <header class="topbar">
+      <div class="brand-mini">
+        <span class="logo-dot"></span>
+        Elegant <b>Wear</b>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-btn" data-target="retail">Retail Shop</button>
+        <button class="nav-btn" data-target="wholesale">Wholesale Shop</button>
+        <button class="nav-btn only-customer" data-target="customer">Customer Panel</button>
+        <button class="nav-btn only-admin" data-target="admin">Admin Panel</button>
+        <button id="logoutBtn" class="nav-btn danger">Logout</button>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Retail Shop -->
+      <section id="retailSection" class="view">
+        <h2>Retail Shop</h2>
+        <div id="retailGrid" class="grid"></div>
+      </section>
+
+      <!-- Wholesale Shop -->
+      <section id="wholesaleSection" class="view hidden">
+        <h2>Wholesale Shop</h2>
+        <div id="wholesaleGrid" class="grid"></div>
+      </section>
+
+      <!-- Customer Panel -->
+      <section id="customerSection" class="view hidden">
+        <h2>Customer Panel</h2>
+        <div class="panels two-col">
+          <div class="panel">
+            <h3>My Cart (Placeholder)</h3>
+            <p>Items in cart: <span id="cartCount">0</span></p>
+            <ul id="cartList" class="list"></ul>
+          </div>
+          <div class="panel">
+            <h3>Order History (Placeholder)</h3>
+            <ul class="list">
+              <li>#EW-10214 — 2x Kurti, 1x Tops — <em>Delivered</em></li>
+              <li>#EW-10202 — 1x Dress — <em>Processing</em></li>
+              <li>#EW-10188 — 1x Saree — <em>Cancelled</em></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Admin Panel -->
+      <section id="adminSection" class="view hidden">
+        <h2>Admin Panel</h2>
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Products</h3>
+            <button id="addProductBtn" class="btn">Add Product</button>
+          </div>
+          <div class="table-wrap">
+            <table class="table" id="adminProductsTable">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Category</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Populated by JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Elegant Wear. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
